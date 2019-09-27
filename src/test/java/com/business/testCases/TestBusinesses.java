@@ -93,7 +93,8 @@ public class TestBusinesses extends TestBase {
 	}
 
 	/*
-	 * This method verifies data returned for an invalid or incorrect URL
+	 * This method verifies data returned for an invalid or incorrect URL.
+	 * This method returns 200 but should return 404, so it's expected to fail
 	 */
 	@Test(groups = { "negativeTests" })
 	public void getBusinessesByIncorrectURL() {

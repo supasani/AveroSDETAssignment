@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class TestBase {
-
+    // Defining variables to be used across different tests 
 	public static RequestSpecification httpRequest;
 	public static Response response;
 	public static String BusinessURL = "http://localhost:9000/v1/core/businesses";
@@ -19,7 +19,8 @@ public class TestBase {
 
 	@BeforeClass
 	public void setup() {
-
+        // Logger variables are initiated before class so that they can
+		// be used by all the tests
 		logger = Logger.getLogger("AveroRestAPI");
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.setLevel(Level.DEBUG);
