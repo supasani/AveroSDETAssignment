@@ -12,7 +12,6 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 
 public class TestBusinesses extends TestBase {
-
 	/*
 	 * This method gets data for all businesses
 	 */

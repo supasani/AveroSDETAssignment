@@ -11,7 +11,6 @@ import io.restassured.RestAssured;
 import io.restassured.http.Method;
 
 public class TestBusinessIds extends TestBase {
-
 	/*
 	 * This method gets data for a specific business
 	 */
