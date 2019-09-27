@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1.713 sec <<< FAILURE!
+getBusinessesByIncorrectURL(com.business.testCases.TestBusinessIds)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.business.testCases.TestBusinessIds.getBusinessesByIncorrectURL(TestBusinessIds.java:137)
+
+getBusinessesByNonExistingIds(com.business.testCases.TestBusinessIds)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.business.testCases.TestBusinessIds.getBusinessesByNonExistingIds(TestBusinessIds.java:109)
+
+getBusinessesByIncorrectURL(com.business.testCases.TestBusinesses)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.business.testCases.TestBusinesses.getBusinessesByIncorrectURL(TestBusinesses.java:116)
+
+getSummarySalesByIncorrectURL(com.summarySales.testCases.TestSummarySales)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.summarySales.testCases.TestSummarySales.getSummarySalesByIncorrectURL(TestSummarySales.java:131)
+

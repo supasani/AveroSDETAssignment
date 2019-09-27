@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.business.testCases.TestBusinessIds">
+        <methods>
+          <include name="getBusinessesByNonExistingIds"/>
+          <include name="getBusinessesByIncorrectURL"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.business.testCases.TestBusinessIds -->
+      <class name="com.business.testCases.TestBusinesses">
+        <methods>
+          <include name="getBusinessesByIncorrectURL"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.business.testCases.TestBusinesses -->
+      <class name="com.summarySales.testCases.TestSummarySales">
+        <methods>
+          <include name="getSummarySalesByIncorrectURL"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.summarySales.testCases.TestSummarySales -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

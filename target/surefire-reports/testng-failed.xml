@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.business.testCases.TestBusinessIds">
+        <methods>
+          <include name="getBusinessesByNonExistingIds"/>
+          <include name="getBusinessesByIncorrectURL"/>
+        </methods>
+      </class> <!-- com.business.testCases.TestBusinessIds -->
+      <class name="com.summarySales.testCases.TestSummarySales">
+        <methods>
+          <include name="getSummarySalesByIncorrectURL"/>
+        </methods>
+      </class> <!-- com.summarySales.testCases.TestSummarySales -->
+      <class name="com.business.testCases.TestBusinesses">
+        <methods>
+          <include name="getBusinessesByIncorrectURL"/>
+        </methods>
+      </class> <!-- com.business.testCases.TestBusinesses -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
