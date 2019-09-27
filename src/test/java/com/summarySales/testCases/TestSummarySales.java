@@ -14,7 +14,7 @@ import io.restassured.path.json.JsonPath;
 public class TestSummarySales extends TestBase {
 
 	/*
-	 * This method gets data for all summary sales 
+	 * This method gets data for all summary sales
 	 */
 	@Test(groups = { "smokeTests" })
 	public void getSummarySales() {

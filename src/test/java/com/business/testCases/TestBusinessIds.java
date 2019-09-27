@@ -13,7 +13,7 @@ import io.restassured.http.Method;
 public class TestBusinessIds extends TestBase {
 
 	/*
-	 * This method gets data for a specific business 
+	 * This method gets data for a specific business
 	 */
 	@Test(groups = { "smokeTests" })
 	public void getBusinessesById() {
@@ -23,7 +23,7 @@ public class TestBusinessIds extends TestBase {
 
 		// HttpRequest and Response
 		httpRequest = RestAssured.given();
-		response = httpRequest.request(Method.GET, "/"+ businessId);
+		response = httpRequest.request(Method.GET, "/" + businessId);
 
 		// Response header verification
 		String responseHeader = response.getContentType();
@@ -40,7 +40,7 @@ public class TestBusinessIds extends TestBase {
 		// Response body
 		String responseBody = response.getBody().asString();
 		logger.info("Response Body==>" + responseBody);
-		// Verify that response is not null
+		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 		JSONObject res = new JSONObject(responseBody);
 		JSONArray data = res.getJSONArray("data");
@@ -86,7 +86,7 @@ public class TestBusinessIds extends TestBase {
 	}
 
 	/*
-	 * This method verifies data returned for a non existing business Id 
+	 * This method verifies data returned for a non existing business Id
 	 */
 	@Test(groups = { "negativeTests" })
 	public void getBusinessesByNonExistingIds() {
