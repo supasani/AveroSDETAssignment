@@ -19,6 +19,7 @@ Clone the AveroSDETAssignment project from the following link: https://github.co
 3. You're all set. You can hit http://localhost:9000/v1/core/businesses in a browser and sanity check you get a response back
 
 ### Running the tests
+Go to the AveroSDETAssignment project that you cloned in the first step.
 Run the complete test suite by right clicking on the testng.xml file. This will execute tests for all three API's that are provided in the assignment. 
 To execute only the positive tests, run the smokeTests.xml file in similar way.
 
