@@ -28,6 +28,8 @@ public class TestSummarySales extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
+		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 
 		// Status code validation
@@ -120,6 +122,8 @@ public class TestSummarySales extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
+		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 
 		JSONObject res = new JSONObject(responseBody);

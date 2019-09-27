@@ -28,6 +28,7 @@ public class TestBusinesses extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
 		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 
@@ -111,6 +112,7 @@ public class TestBusinesses extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
 		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 

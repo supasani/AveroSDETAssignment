@@ -37,7 +37,9 @@ public class TestBusinessIds extends TestBase {
 		String statusLine = response.getStatusLine();
 		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
 
+		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
 		// Verify that response is not null
 		Assert.assertNotNull(responseBody);
 		JSONObject res = new JSONObject(responseBody);
@@ -103,6 +105,8 @@ public class TestBusinessIds extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
+		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 
 		JSONObject res = new JSONObject(responseBody);
@@ -136,6 +140,8 @@ public class TestBusinessIds extends TestBase {
 
 		// Response body
 		String responseBody = response.getBody().asString();
+		logger.info("Response Body==>" + responseBody);
+		// Verify that response body is not null
 		Assert.assertNotNull(responseBody);
 
 		JSONObject res = new JSONObject(responseBody);
