@@ -8,9 +8,15 @@ Clone the AveroSDETAssignment project from the following link: https://github.co
 
 ### Prerequisites
 
-1. Install an IDE Eclipse or IntelliJ IDEA to open and run this project.
-2. Have Java installed on the system. 
-3. Right click on pom.xml file and select Maven. The select Maven clean and install. This will install all dependencies for this project.
+1. You will need the latest stable docker release. See the Docker install instructions for more information.
+2. Install an IDE Eclipse or IntelliJ IDEA to open and run this project.
+3. Have Java installed on the system. 
+4. Right click on pom.xml file and select Maven. The select Maven clean and install. This will install all dependencies for this project.
+
+### Running the APIs locally
+1. Pull the Docker image: docker pull avero/sdet-coding-exercise
+2. Run the Docker image, opening up port 9000: docker run -p 9000:9000 avero/sdet-coding-exercise
+3. You're all set. You can hit http://localhost:9000/v1/core/businesses in a browser and sanity check you get a response back
 
 ### Running the tests
 Run the complete test suite by right clicking on the testng.xml file. This will execute tests for all three API's that are provided in the assignment. 
