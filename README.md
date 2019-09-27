@@ -21,6 +21,7 @@ Clone the AveroSDETAssignment project from the following link: https://github.co
 ### Running the tests
 1. Go to the AveroSDETAssignment project that you cloned in the first step.
 2. Run the complete test suite by right clicking on the testng.xml file. This will execute tests for all three API's that are provided in the assignment. 
+Note: Here 3/7 tests will pass and 4/7 will fail as per the expectation set in the response code requirements. Response code for incorrect and invalid URLs are 200 instead of400 and 404 and this is why some tests will fail. 
 3. To execute only the positive tests, run the smokeTests.xml file in similar way.
 
 Logs are generated for each test run and stored in a log file. 
