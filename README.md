@@ -1,6 +1,6 @@
 # Project Title
 
-This project is to test the API provided by Avero for its SDET assignment. The tests are written using the Rest Assured Framework using Java and TestNG.
+This project is to test the APIs provided by Avero for its SDET assignment. All tests are written using the Rest Assured Framework using Java and TestNG.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Clone the AveroSDETAssignment project from the following link: https://github.co
 
 ### Prerequisites
 
-1. Install an IDE Eclipse or IntelliJ IDEA to open and run this project once it is downloaded.
+1. Install an IDE Eclipse or IntelliJ IDEA to open and run this project.
 2. Have Java installed on the system. 
 3. Right click on pom.xml file and select Maven. The select Maven clean and install. This will install all dependencies for this project.
 
